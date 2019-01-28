@@ -2,7 +2,7 @@ version: '3'
 services:
   dns:
     restart: always
-    image: cytopia/bind
+    image: peetg/docker-bind
     ports:
       - "53:53"
       - "53:53/udp"
