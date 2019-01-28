@@ -2,8 +2,8 @@ version: '3'
 services:
   dns:
     image: cytopia/bind
-  ports:
-    - "53:53/tcp"
-    - "52:53/udp"
-  environment:
-    - WILDCARD_DNS='home.gouws.com=192.168.1.10'
+    ports:
+      - "53:53/tcp"
+      - "52:53/udp"
+    environment:
+      - WILDCARD_DNS='home.gouws.com=192.168.1.10'
