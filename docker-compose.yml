@@ -10,6 +10,6 @@ services:
       - WILDCARD_DNS=home.gouws.com=192.168.1.10
       - EXTRA_HOSTS='unifi.home.gouws.com=192.168.1.100'
       - DNS_FORWARDER=8.8.8.8,8.8.4.4
-      - ALLOW_RECURSION=192.168.1.0/24,127.0.0.1
-      - ALLOW_QUERY=192.168.1.0/24,127.0.0.1
+      - ALLOW_RECURSION=192.168.1.0/24,127.0.0.1,172.16.0.0/20
+      - ALLOW_QUERY=192.168.1.0/24,127.0.0.1,172.16.0.0/20
 
